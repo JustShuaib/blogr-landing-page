@@ -470,19 +470,176 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.bg-blue-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+.absolute{
+  position: absolute;
 }
 
-.bg-light-red{
-  --tw-bg-opacity: 1;
-  background-color: hsl(353 100% 62% / var(--tw-bg-opacity));
+.relative{
+  position: relative;
 }
 
-.bg-very-light-red{
+.-top-40{
+  top: -10rem;
+}
+
+.-top-20{
+  top: -5rem;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.z-0{
+  z-index: 0;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-44{
+  margin-bottom: 11rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mt-52{
+  margin-top: 13rem;
+}
+
+.mt-36{
+  margin-top: 9rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-80vh{
+  height: 75vh;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-5{
+  height: 1.25rem;
+}
+
+.w-7{
+  width: 1.75rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.place-content-center{
+  place-content: center;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-bl-50{
+  border-bottom-left-radius: 80px;
+}
+
+.rounded-tr-50{
+  border-top-right-radius: 80px;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-white-text{
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 100% / var(--tw-border-opacity));
+}
+
+.bg-white{
   --tw-bg-opacity: 1;
-  background-color: hsl(13 100% 72% / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-light-red-cta{
+  --tw-bg-opacity: 1;
+  background-color: hsl(356 100% 66% / var(--tw-bg-opacity));
+}
+
+.bg-very-dark-blue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(237 17% 21% / var(--tw-bg-opacity));
+}
+
+.bg-footer-background{
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 10% 16% / var(--tw-bg-opacity));
+}
+
+.bg-inherit{
+  background-color: inherit;
 }
 
 .bg-gradient-to-br{
@@ -496,4 +653,143 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-light-red{
   --tw-gradient-to: hsl(353, 100%, 62%);
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
+}
+
+.pb-12{
+  padding-bottom: 3rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-overpass{
+  font-family: Overpass, sans-serif;
+}
+
+.font-ubuntu{
+  font-family: Ubuntu, sans-serif;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.leading-5{
+  line-height: 1.25rem;
+}
+
+.leading-7{
+  line-height: 1.75rem;
+}
+
+.text-white-text{
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.text-light-red-cta{
+  --tw-text-opacity: 1;
+  color: hsl(356 100% 66% / var(--tw-text-opacity));
+}
+
+.text-headings-blue{
+  --tw-text-opacity: 1;
+  color: hsl(208 49% 24% / var(--tw-text-opacity));
+}
+
+.text-footer-blue{
+  --tw-text-opacity: 1;
+  color: hsl(240 2% 79% / var(--tw-text-opacity));
+}
+
+.text-footer-background{
+  --tw-text-opacity: 1;
+  color: hsl(240 10% 16% / var(--tw-text-opacity));
+}
+
+.text-very-dark-grayish-blue{
+  --tw-text-opacity: 1;
+  color: hsl(207 13% 34% / var(--tw-text-opacity));
+}
+
+h3{
+  margin-bottom: 0.75rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: hsl(208 49% 24% / var(--tw-text-opacity));
+}
+
+p.main_para{
+  margin-bottom: 2rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: hsl(237 17% 21% / var(--tw-text-opacity));
+}
+
+h4{
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+footer li{
+  list-style-type: none;
+  text-align: center;
+  line-height: 1.75rem;
 }
