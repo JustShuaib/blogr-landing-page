@@ -600,10 +600,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
-.list-none{
-  list-style-type: none;
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -659,15 +655,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border{
   border-width: 1px;
-}
-
-.border-t{
-  border-top-width: 1px;
-}
-
-.border-gray-300{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .border-white-text{
@@ -922,6 +909,59 @@ footer li{
   font-weight: 700;
 }
 
+@media (min-width: 768px){
+  .inner-list{
+    --tw-bg-opacity: 1;
+    background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+  }
+
+  .inner-list{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .inner-list{
+    padding-left: 1.5rem;
+  }
+
+  .inner-list{
+    text-align: left;
+  }
+
+  .inner-list{
+    --tw-text-opacity: 1;
+    color: hsl(237 17% 21% / var(--tw-text-opacity));
+  }
+
+  .inner-list{
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .inner-list:hover{
+    font-weight: 700;
+  }
+
+  .inner-list li{
+    padding: 0px;
+  }
+
+  .inner-list li{
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+  }
+
+  .inner-list li:hover{
+    cursor: pointer;
+  }
+
+  .inner-list li:hover{
+    --tw-text-opacity: 1;
+    color: hsl(237 17% 21% / var(--tw-text-opacity));
+  }
+}
+
 .sign_up-btn{
   margin-left: auto;
   margin-right: auto;
@@ -941,6 +981,13 @@ footer li{
   padding-right: 0.5rem;
   text-align: center;
   font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.sign_up-btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(13 100% 72% / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
@@ -969,8 +1016,96 @@ footer li{
   }
 
   .sign_up-btn{
+    font-family: Ubuntu, sans-serif;
+  }
+
+  .sign_up-btn{
     --tw-text-opacity: 1;
     color: hsl(356 100% 66% / var(--tw-text-opacity));
+  }
+}
+
+.login-btn{
+  margin-top: 1.5rem;
+  cursor: pointer;
+  list-style-type: none;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-top: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(237 17% 21% / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .login-btn{
+    margin-top: 0px;
+  }
+
+  .login-btn{
+    margin-left: auto;
+  }
+
+  .login-btn{
+    border-width: 0px;
+  }
+
+  .login-btn{
+    padding-top: 0px;
+  }
+
+  .login-btn{
+    font-family: Ubuntu, sans-serif;
+  }
+
+  .login-btn{
+    --tw-text-opacity: 1;
+    color: hsl(0 0% 100% / var(--tw-text-opacity));
+  }
+}
+
+.hover\:bg-very-light-red:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(13 100% 72% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white-text:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.hover\:text-white-text:hover{
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.hover\:text-light-red-cta:hover{
+  --tw-text-opacity: 1;
+  color: hsl(356 100% 66% / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+@media (min-width: 768px){
+  .md\:absolute{
+    position: absolute;
+  }
+
+  .md\:relative{
+    position: relative;
+  }
+
+  .md\:bottom-5{
+    bottom: 1.25rem;
+  }
+
+  .md\:left-2{
+    left: 0.5rem;
   }
 
   .md\:ml-10{
@@ -991,10 +1126,6 @@ footer li{
 
   .md\:ml-1{
     margin-left: 0.25rem;
-  }
-
-  .md\:ml-auto{
-    margin-left: auto;
   }
 
   .md\:block{
@@ -1019,6 +1150,10 @@ footer li{
 
   .md\:w-full{
     width: 100%;
+  }
+
+  .md\:w-36{
+    width: 9rem;
   }
 
   .md\:flex-row{
@@ -1047,10 +1182,6 @@ footer li{
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:border-0{
-    border-width: 0px;
-  }
-
   .md\:bg-inherit{
     background-color: inherit;
   }
@@ -1069,6 +1200,11 @@ footer li{
 
   .md\:font-ubuntu{
     font-family: Ubuntu, sans-serif;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-white-text{
