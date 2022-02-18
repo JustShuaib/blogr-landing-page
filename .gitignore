@@ -19,4 +19,5 @@ design
 src
 node_modules
 *.json
-*.js
+taiwind.config.js
+.vscode

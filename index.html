@@ -16,7 +16,7 @@
   </head>
   <body class="font-overpass">
     <header
-      class="from-very-light-red to-light-red rounded-bl-50 text-white-text h-80vh mb-16 bg-gradient-to-br px-6 pt-6"
+      class="from-very-light-red to-light-red rounded-bl-50 text-white-text mb-24 bg-gradient-to-br p-6"
     >
       <!-- Blogr logo and Hamburger -->
       <div class="flex items-center justify-between">
@@ -34,8 +34,9 @@
           alt=""
         />
       </div>
+      <!-- Mobile nav bar -->
       <nav
-        class="bg-white-text text-very-dark-blue mx-auto mt-8 hidden rounded-md py-6 text-center shadow-lg"
+        class="bg-white-text text-very-dark-blue mx-auto mt-8 mb-2 hidden rounded-md py-6 text-center shadow-lg"
         id="main-nav"
       >
         <ul class="flex w-full flex-col space-y-6 px-6 pt-6">
@@ -92,27 +93,31 @@
           <li href="#" class="sign_up-btn"><a href="#"> Sign Up </a></li>
         </ul>
       </nav>
-      <h1 class="mt-16 text-center text-3xl font-bold">
-        A modern publishing platform
-      </h1>
+      <!-- End of mobile nav bar -->
+      <!-- Beginning of main content -->
+      <section id="main-header">
+        <h1 class="mt-24 text-center text-3xl font-bold">
+          A modern publishing platform
+        </h1>
 
-      <p class="mt-2 mb-5 text-center">
-        Grow your audience and build your online brand
-      </p>
-      <div class="flex items-center justify-center space-x-6">
-        <button
-          class="text-light-red-cta rounded-full bg-white px-3 py-2 font-bold"
-        >
-          Start for Free
-        </button>
-        <button
-          class="text-white-text bg-light-red-cta border-white-text rounded-full border px-3 py-2 font-bold"
-        >
-          Learn More
-        </button>
-      </div>
+        <p class="mt-3 mb-8 text-center">
+          Grow your audience and build your online brand
+        </p>
+        <div class="flex items-center justify-center space-x-6 pb-28">
+          <button
+            class="text-light-red-cta rounded-full bg-white px-3 py-2 font-bold"
+          >
+            Start for Free
+          </button>
+          <button
+            class="text-white-text bg-light-red-cta border-white-text rounded-full border px-3 py-2 font-bold"
+          >
+            Learn More
+          </button>
+        </div>
+      </section>
     </header>
-    <h2 class="text-headings-blue mb-6 text-center text-2xl font-bold">
+    <h2 class="text-headings-blue mb-6 mt-6 text-center text-2xl font-bold">
       Designed for the future
     </h2>
     <section class="mb-44 px-7">
@@ -250,32 +255,6 @@
         >Adeoti Shuaib</a
       >.
     </div>
-    <script>
-      document.getElementById("hamburger").addEventListener("click", () => {
-        document.getElementById("main-nav").classList.remove("invisible");
-        document.querySelector("nav").classList.remove("hidden");
-        document.getElementById("close-icon").classList.remove("hidden");
-        document.getElementById("hamburger").classList.add("hidden");
-      });
-
-      document.getElementById("close-icon").addEventListener("click", () => {
-        document.getElementById("main-nav").classList.add("invisible");
-        document.querySelector("nav").classList.add("hidden");
-        document.getElementById("close-icon").classList.add("hidden");
-        document.getElementById("hamburger").classList.remove("hidden");
-      });
-      // Product, Company and Connect
-      document.getElementById("product").addEventListener("click", () => {
-        document.getElementById("product-list").classList.toggle("hidden");
-      });
-
-      document.getElementById("company").addEventListener("click", () => {
-        document.getElementById("company-list").classList.toggle("hidden");
-      });
-
-      document.getElementById("connect").addEventListener("click", () => {
-        document.getElementById("connect-list").classList.toggle("hidden");
-      });
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
