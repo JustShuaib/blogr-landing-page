@@ -13,6 +13,7 @@ const connectList = document.getElementById("connect-list");
 
 // Main header
 const mainHeader = document.getElementById("main-header");
+const login = document.getElementById("login");
 
 hamburger.addEventListener("click", () => {
   document.getElementById("main-nav").classList.remove("invisible");
@@ -21,12 +22,14 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.add("hidden");
   // To close the main header when the nav bar is active
   mainHeader.classList.add("hidden");
+  login.classList.remove("hidden");
 });
 
 closeIcon.addEventListener("click", () => {
   document.getElementById("main-nav").classList.add("invisible");
   document.querySelector("nav").classList.add("hidden");
   closeIcon.classList.add("hidden");
+  login.classList.add("hidden");
   hamburger.classList.remove("hidden");
   // To show the main header when the nav bar is not active
   mainHeader.classList.remove("hidden");
