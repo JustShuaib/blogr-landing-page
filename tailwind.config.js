@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        "80vh": "",
+        120: "40rem",
       },
       borderRadius: {
         50: "80px",

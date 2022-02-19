@@ -24,7 +24,7 @@
           <img
             src="./images/logo.svg"
             alt="Blogr Logo"
-            class="h-8 md:ml-10 md:h-6"
+            class="h-8 md:ml-10 md:h-4 lg:h-6"
           />
           <img
             class="h-5 w-7 cursor-pointer md:hidden"
@@ -47,8 +47,8 @@
           <ul
             class="md:text-white-text md:font-ubuntu flex w-full flex-col space-y-6 px-6 pt-6 md:mt-0 md:flex md:flex-row md:items-center md:justify-center md:space-y-0 md:pt-0"
           >
-            <div class="main-list md:ml-0" id="product">
-              <li class="inline-block hover:underline">Product</li>
+            <div class="main-list md:ml-6 lg:ml-0" id="product">
+              <li class="inline-block md:hover:underline">Product</li>
               <!-- Red image for small screen -->
               <img
                 src="./images/icon-arrow-dark.svg"
@@ -62,7 +62,7 @@
                 class="md:ml-1 md:inline-block"
               />
             </div>
-            <ul class="inner-list hidden" id="product-list">
+            <ul class="inner-list hidden md:-translate-x-24" id="product-list">
               <li>Overview</li>
               <li>Pricing</li>
               <li>Marketplace</li>
@@ -70,7 +70,7 @@
               <li>Integrations</li>
             </ul>
             <div class="main-list mt-6" id="company">
-              <li class="inline-block hover:underline">Company</li>
+              <li class="inline-block md:hover:underline">Company</li>
               <img
                 src="./images/icon-arrow-dark.svg"
                 class="ml-1 inline-block md:hidden"
@@ -83,15 +83,15 @@
                 class="md:ml-1 md:inline-block"
               />
             </div>
-            <ul class="inner-list hidden" id="company-list">
+            <ul class="inner-list hidden md:translate-x-2" id="company-list">
               <li>About</li>
               <li>Team</li>
               <li>Blog</li>
               <li>Careers</li>
               <li>Overview</li>
             </ul>
-            <div class="main-list mt-6 md:relative" id="connect">
-              <li class="inline-block hover:underline">Connect</li>
+            <div class="main-list mt-6" id="connect">
+              <li class="inline-block md:hover:underline">Connect</li>
               <img
                 src="./images/icon-arrow-dark.svg"
                 class="ml-1 inline-block md:hidden"
@@ -104,10 +104,7 @@
                 class="md:ml-1 md:inline-block"
               />
             </div>
-            <ul
-              class="inner-list hidden md:absolute md:bottom-5 md:left-2 md:w-36"
-              id="connect-list"
-            >
+            <ul class="inner-list hidden md:translate-x-32" id="connect-list">
               <li class="pt-2">Contact</li>
               <li class="py-4">Newsletter</li>
               <li class="pb-2">LinkedIn</li>

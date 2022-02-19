@@ -866,12 +866,6 @@ h4{
   font-weight: 700;
 }
 
-footer li{
-  list-style-type: none;
-  text-align: center;
-  line-height: 1.75rem;
-}
-
 .main-list{
   margin-left: auto;
   margin-right: auto;
@@ -884,6 +878,10 @@ footer li{
 }
 
 @media (min-width: 768px){
+  .main-list{
+    position: relative;
+  }
+
   .main-list{
     margin-left: 2rem;
   }
@@ -911,6 +909,18 @@ footer li{
 
 @media (min-width: 768px){
   .inner-list{
+    position: absolute;
+  }
+
+  .inner-list{
+    top: 6rem;
+  }
+
+  .inner-list{
+    width: 9rem;
+  }
+
+  .inner-list{
     --tw-bg-opacity: 1;
     background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
   }
@@ -929,18 +939,9 @@ footer li{
   }
 
   .inner-list{
-    --tw-text-opacity: 1;
-    color: hsl(237 17% 21% / var(--tw-text-opacity));
-  }
-
-  .inner-list{
     --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .inner-list:hover{
-    font-weight: 700;
   }
 
   .inner-list li{
@@ -1066,6 +1067,27 @@ footer li{
   }
 }
 
+footer li{
+  list-style-type: none;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px){
+  footer li{
+    cursor: pointer;
+  }
+
+  footer li{
+    font-family: Ubuntu, sans-serif;
+  }
+
+  footer li:hover{
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
 .hover\:bg-very-light-red:hover{
   --tw-bg-opacity: 1;
   background-color: hsl(13 100% 72% / var(--tw-bg-opacity));
@@ -1086,28 +1108,7 @@ footer li{
   color: hsl(356 100% 66% / var(--tw-text-opacity));
 }
 
-.hover\:underline:hover{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
 @media (min-width: 768px){
-  .md\:absolute{
-    position: absolute;
-  }
-
-  .md\:relative{
-    position: relative;
-  }
-
-  .md\:bottom-5{
-    bottom: 1.25rem;
-  }
-
-  .md\:left-2{
-    left: 0.5rem;
-  }
-
   .md\:ml-10{
     margin-left: 2.5rem;
   }
@@ -1120,8 +1121,8 @@ footer li{
     margin-bottom: 0px;
   }
 
-  .md\:ml-0{
-    margin-left: 0px;
+  .md\:ml-6{
+    margin-left: 1.5rem;
   }
 
   .md\:ml-1{
@@ -1144,16 +1145,27 @@ footer li{
     display: none;
   }
 
-  .md\:h-6{
-    height: 1.5rem;
+  .md\:h-4{
+    height: 1rem;
   }
 
   .md\:w-full{
     width: 100%;
   }
 
-  .md\:w-36{
-    width: 9rem;
+  .md\:-translate-x-24{
+    --tw-translate-x: -6rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:translate-x-2{
+    --tw-translate-x: 0.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:translate-x-32{
+    --tw-translate-x: 8rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:flex-row{
@@ -1216,5 +1228,20 @@ footer li{
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:hover\:underline:hover{
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:ml-0{
+    margin-left: 0px;
+  }
+
+  .lg\:h-6{
+    height: 1.5rem;
   }
 }
