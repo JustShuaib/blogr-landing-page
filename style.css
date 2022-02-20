@@ -704,6 +704,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to bottom right, hsl(13, 100%, 72%), rgba(225,225,225,0.2)), url(./images/bg-pattern-intro-mobile.svg);
 }
 
+.bg-gradient-to-tr{
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
 .from-very-light-red{
   --tw-gradient-from: hsl(13, 100%, 72%);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, hsl(13 100% 72% / 0));
