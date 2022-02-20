@@ -2,6 +2,9 @@ module.exports = {
   content: ["index.html"],
   theme: {
     extend: {
+      screens: {
+        xsm: "450px",
+      },
       spacing: {
         120: "40rem",
       },
@@ -32,10 +35,12 @@ module.exports = {
         "very-dark-saturated-blue": "hsl(237, 23%, 32%)",
       },
       backgroundImage: {
-        "hero-pattern": "url('/images/bg-pattern-intro-mobile.svg')",
-        "desktop-bg": "url('/images/bg-pattern-intro-desktop.svg')",
+        "desktop-bg":
+          "linear-gradient(to bottom right, hsl(13, 100%, 72%), rgba(225,225,225,0.1)), url(./images/bg-pattern-intro-desktop.svg)",
+        "mobile-bg":
+          "linear-gradient(to bottom right, hsl(13, 100%, 72%), rgba(225,225,225,0.2)), url(./images/bg-pattern-intro-mobile.svg)",
       },
     },
-    plugins: [],
   },
+  plugins: [],
 };
