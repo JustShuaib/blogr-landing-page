@@ -19,5 +19,5 @@ design
 src
 node_modules
 *.json
-taiwind.config.js
+tailwind.config.js
 .vscode
