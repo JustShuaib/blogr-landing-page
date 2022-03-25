@@ -12,7 +12,7 @@ Users should be able to:
 ## Links
 
 - Solution URL: [Add solution URL here](https://www.github.com/JustShuaib/blogr-landing-page)
-- Live Site URL: [Add live site URL here](https://shuaib-blogr-landing-page)
+- Live Site URL: [Add live site URL here](https://blogr-landing-page.netlify.app)
 
 ## Built with
 
