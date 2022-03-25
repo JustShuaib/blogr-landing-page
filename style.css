@@ -1174,23 +1174,22 @@ h4 {
     color: hsl(0 0% 100% / var(--tw-text-opacity));
   }
 }
-
-footer li {
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer a {
   list-style-type: none;
   text-align: center;
   line-height: 1.75rem;
 }
 
 @media (min-width: 768px) {
-  footer li {
-    cursor: pointer;
-  }
-
-  footer li {
+  footer a {
     font-family: Ubuntu, sans-serif;
   }
 
-  footer li:hover {
+  footer a:hover {
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
   }
